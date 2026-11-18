@@ -1,0 +1,19 @@
+Initial commit: payabl. API Tester v6.17
+
+Streamlit utility for exercising the payabl. gateway API (HPP Init,
+Apple Pay / Google Pay / Trustly / PayPal direct payments, Authorize,
+Pre-Authorize, Capture and Diagnose) against Sandbox or Production.
+
+Includes, on top of v6.16.1:
+- Capture Transaction ID field now follows the latest transaction ID
+- Fresh Order ID after each send, plus a regenerate button
+- Per-request LIVE confirmation gating all send buttons in Production
+- Client-side validation (amount, required fields, Luhn, expiry, CVC),
+  switchable in Sandbox, always on in Production
+- pytest suite covering validation and UI flows with the gateway mocked
+
+Repository hygiene: .gitignore, .gitattributes, restructured README,
+version history in CHANGELOG.md.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01WV6P5uRFv54kK9hA3cmJDz

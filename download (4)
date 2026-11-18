@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit local secrets / config
+.streamlit/secrets.toml
+
+# Environment / credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Exported request history (may contain transaction IDs / order data)
+payabl_api_test_history*.json
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build artefacts / release bundles
+*.zip
+dist/
+build/
